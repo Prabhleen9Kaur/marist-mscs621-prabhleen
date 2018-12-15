@@ -1,0 +1,11 @@
+
+version: '3'
+services:
+  web:
+    image: marist-mscs621-prabhleen
+    build: .
+    command: npm start
+    ports:
+      - "3000:3000"
+    volumes:
+- /marist-mscs621-prabhleen

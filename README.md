@@ -1,7 +1,9 @@
-<h1 align="center" style="border-bottom: none;">🚀 Food Coach Demo</h1>
+<h1 align="center" style="border-bottom: none;"><B>MSCS-621 Fall 2018 : Cloud ComputingProject<B> </h1>
+<h1 align="center" style="border-bottom: none;">Prabhleen Kaur </h3>
+<h1 align="center" style="border-bottom: none;"><B>Watson Assisstant Food Coach App<B> </h1>
 <h3 align="center">This application demonstrates how the Watson Assistant (formerly Conversation) service can be adapted to use Tone Analyzer's tone along with intents and entities in a simple chat interface.</h3>
 <p align="center">
-  <a href="http://travis-ci.org/watson-developer-cloud/food-coach">
+  <a href="https://assistant-chat-us-east.watsonplatform.net/web/public/e021d3d5-052b-4dce-84fd-b6509dfa5d8e">
     <img alt="Travis" src="https://travis-ci.org/watson-developer-cloud/food-coach.svg?branch=master">
   </a>
   <a href="#badge">

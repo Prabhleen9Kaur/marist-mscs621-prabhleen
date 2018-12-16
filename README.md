@@ -22,8 +22,13 @@ These intents and entities help the bot understand variations your input.
 After asking you what you ate (if a meal was consumed), the bot asks you how you feel about it. Depending on your emotional tone, the bot provides different feedback.
     </p>
  
-  <h2 align="left" "><B>Project  Architecture<B>  </h2>
-   ![CCProj](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/CCProj.jpg?raw=true)
+  <h2 align="left"  style="border-bottom: none;"><B>Project  Architecture<B>  </h2>
+  <p>The Architecture of the project explains the development and the pilot environment.The project is developed using IBM Cloud Services(Bluemix + Watson) and Rest APIs.The application is deployed in the Local Cloud and Local Browser.AWS cloud service is used for deployment of the application in the hybrid cloud environment .The Vagrant ,Docker and Virtual box is used for deploying the app locally.The GitHub is used as the source code repository.The code is borrowed from github project https://github.com/watson-developer-cloud/food-coach.<br>
+<B>APIs Specification :<B>Watson Assistant API , Data Handling and methode to get user response.
+    </p>
+    
+  ![CCProj](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/CCProj.jpg?raw=true)
+ 
  <h2 align="left" style="border-bottom: none;"><B>Dependencies and Services used <B>  </h2>
  <p><ul>
     <li><a href="https://console.bluemix.net/docs/cli/index.html#overview">IBM Cloud Services</a></li>
@@ -35,19 +40,13 @@ After asking you what you ate (if a meal was consumed), the bot asks you how you
     </P>
     
    
- 
 
 ![app demo](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/app%20demo.gif?raw=true)
-
-
 Demo: http://food-coach.ng.bluemix.net/
 
-For more information on the Assistant service, see the [detailed documentation](https://console.bluemix.net/docs/services/conversation/index.html#about).
-For more information on the Tone Analyzer Service, see the [detailed documentation](http://www.ibm.com/watson/developercloud/tone-analyzer.html).
 
 ## Deploying the application
-
-If you want to experiment with the application or use it as a basis for building your own application, you need to deploy it in your own environment. You can then explore the files, make changes, and see how those changes affect the running application. After making modifications, you can deploy your modified version of the application to IBM Cloud.
+The Application acan be deployed by following the steps mentioned below.Here IBM Cloud and AWS cloud services are used .By following the steps it can be deployed in any cloud environment.Snips have been attached to help follow the steps.
 
 ## Prerequisites
 

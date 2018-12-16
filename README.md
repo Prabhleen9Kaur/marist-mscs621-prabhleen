@@ -36,7 +36,7 @@ After asking you what you ate (if a meal was consumed), the bot asks you how you
     <li><a href="https://github.com/nodesource/distributions/blob/master/README.md#debinstall">Node.js</a></li>
     <li><a href="https://console.bluemix.net/docs/cli/index.html#overview">IBM Cloud CLI</a></li>
     <li><a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1">Docker</a></li>
-    <li><a href="https://docs.docker.com/compose/install/#install-compose">Docker-Composer</a></li>
+    <li><a href="https://docs.docker.com/compose/install/#install-compose">Docker-Composer</a></li><br>
     </P>
     
    
@@ -67,19 +67,23 @@ The Application acan be deployed by following the steps mentioned below.Here IBM
     - Copy the `apikey` value, or copy the `username` and `password` values if your service instance doesn't provide an `apikey`.
     - Copy the `url` value.
 
+![watsonapi](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/watsonapi.JPG?raw=true)
+
 ## Configuring the application
 
-1. In your IBM Cloud console, open the Watson Assistant service instance
+1. In your **IBM Cloud console**, open the Watson Assistant service instance
 
-2. Click the **Import workspace** icon in the Watson Assistant service tool. Specify the location of the workspace JSON file in your local copy of the app project:
+2. Click the **Import workspace** icon in the Watson Assistant service tool. Specify the location of the workspace JSON file in your local drive of the app project:
 
    `<project_root>/food-coach/training/food-coach-workspace.json`
 
-3. Select **Everything (Intents, Entities, and Dialog)** and then click **Import**. The car dashboard workspace is created.
+3. Select **Everything (Intents, Entities, and Dialog)** and then click **Import**. The skill dashboard workspace is created.
 
-4. Click the menu icon in the upper-right corner of the workspace tile, and then select **View details**.
+4. Click on the **Skills** from the header or from the homepage <Skill/Food Coach/Build> 
 
-5. Click the ![Copy](readme_images/copy.png) icon to copy the workspace ID to the clipboard.
+5.Click on the 3 dots of the skill in the upper-right corner of the workspace title, and then select **View details**.
+
+6. Copy the **workspace ID**, **Username** and **Password** to the clipboard.
 
     ![Steps to get credentials](https://github.com/watson-developer-cloud/assistant-simple/raw/master/readme_images/assistant-simple.gif)
 

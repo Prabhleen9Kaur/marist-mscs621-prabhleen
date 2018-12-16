@@ -3,8 +3,11 @@
 <h1 align="center" style="border-bottom: none;"><B>Watson Assisstant Food Coach App<B> </h1>
 <h3 align="center">This application demonstrates how the Watson Assistant (formerly Conversation) service can be adapted to use Tone Analyzer's tone along with intents and entities in a simple chat interface.</h3>
 
+<p>
+    </p>
+    
 
-![app demo](readme_images/demo.gif?raw=true)
+![app demo](readme_images/app demo.gif?raw=true)
 
 Demo: http://food-coach.ng.bluemix.net/
 

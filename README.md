@@ -33,7 +33,7 @@ After asking you what you ate (if a meal was consumed), the bot asks you how you
     
    
   <h2 align="left" "><B>Project  Architecture<B>  </h2>
-   ![Copy](readme_images/copy.png)
+   ![CCProj](readme_images/CCProj.jpg)
 
 ![app demo](readme_images/app demo.gif?raw=true)
 

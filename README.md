@@ -24,13 +24,16 @@ After asking you what you ate (if a meal was consumed), the bot asks you how you
  <h2 align="left" "><B>Dependencies and Services used <B>  </h2>
  <p><ul>
     <li><a href="https://console.bluemix.net/docs/cli/index.html#overview">IBM Cloud Services</a></li>
-    <li>AWSCloud Services</li>
-    <li>Watson Assistant API</li>
+    <li><a href="https://aws.amazon.com/console/">AWS Cloud Services</a></li><li>AWSCloud Services</li>
     <li><a href="https://github.com/nodesource/distributions/blob/master/README.md#debinstall">Node.js</a></li>
+    <li><a href="https://console.bluemix.net/docs/cli/index.html#overview">IBM Cloud CLI</a></li>
     <li><a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1">Docker</a></li>
     <li><a href="https://docs.docker.com/compose/install/#install-compose">Docker-Composer</a></li>
     </P>
     
+   
+  <h2 align="left" "><B>Project  Architecture<B>  </h2>
+   ![Copy](readme_images/copy.png)
 
 ![app demo](readme_images/app demo.gif?raw=true)
 

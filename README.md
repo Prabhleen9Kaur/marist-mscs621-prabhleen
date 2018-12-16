@@ -3,7 +3,7 @@
 <h1 align="center" style="border-bottom: none;"><B>Watson Assisstant Food Coach App<B> </h1>
 <h3 align="center">This application demonstrates how the Watson Assistant (formerly Conversation) service can be adapted to use Tone Analyzer's tone along with intents and entities in a simple chat interface.</h3>
 
-<p><B>Purpose of the Application<B></p>
+<h2 align="left" "> <B>Purpose of the Application<B> </h2>
 <p>The application interface is designed for chatting with a coaching bot. Based on the time of day, it asks you if you've had a particular meal (breakfast, lunch, or dinner) and what you ate for that meal.
 
 The chat interface is in the left panel of the UI, and the JSON response object returned by the Assistant service in the right panel. Your input is run against a small set of sample data trained with the following intents:
@@ -21,16 +21,18 @@ These intents and entities help the bot understand variations your input.
 After asking you what you ate (if a meal was consumed), the bot asks you how you feel about it. Depending on your emotional tone, the bot provides different feedback.
     </p>
  
- <h2 align="center" "><B>Dependencies and Services used <B>  </h2>
+ <h2 align="left" "><B>Dependencies and Services used <B>  </h2>
  <p><ul>
-    <li>IBM Cloud Services</li>
+    <li><a href="https://console.bluemix.net/docs/cli/index.html#overview">IBM Cloud Services</a></li>
     <li>AWSCloud Services</li>
     <li>Watson Assistant API</li>
-    <li>IBM Cloud Services</li>
+    <li><a href="https://github.com/nodesource/distributions/blob/master/README.md#debinstall">Node.js</a></li>
+    <li><a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1">Docker</a></li>
+    <li><a href="https://docs.docker.com/compose/install/#install-compose">Docker-Composer</a></li>
     </P>
     
 
-![app demo](readme_images/app_demo.gif?raw=true)
+![app demo](readme_images/app demo.gif?raw=true)
 
 Demo: http://food-coach.ng.bluemix.net/
 

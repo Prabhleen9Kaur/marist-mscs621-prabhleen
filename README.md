@@ -1,8 +1,9 @@
 <h1 align="center" style="border-bottom: none;"><B>MSCS-621 Fall 2018 : Cloud ComputingProject<B> </h1>
-<h2 align="center" style="border-bottom: none;">Prabhleen Kaur </h2>
+<h2 align="left" style="border:none" >Prabhleen Kaur </h2>
+<h2 align="left">MS Software Development </h2><br>
 <h1 align="center" style="border-bottom: none;"><B>Watson Assisstant Food Coach App<B> </h1>
-<h3 align="center">This application demonstrates how the Watson Assistant (formerly Conversation) service can be adapted to use Tone Analyzer's tone along with intents and entities in a simple chat interface.</h3>
-
+<h4 align="left">The Project is an application based on Watson Assistantand the purpose of this project is to deploy the application into hybrid cloud  environmentand ,configure and run in two different cloud environment.This application demonstrates how the Watson Assistant (formerly Conversation) service can be adapted to use Tone Analyzer's tone along with intents and entities in a simple chat interface.</h4>
+<br>
 <h2 align="left" "> <B>Purpose of the Application<B> </h2>
 <p>The application interface is designed for chatting with a coaching bot. Based on the time of day, it asks you if you've had a particular meal (breakfast, lunch, or dinner) and what you ate for that meal.
 

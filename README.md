@@ -1,10 +1,10 @@
 <h1 align="center" style="border-bottom: none;"><B>MSCS-621 Fall 2018 : Cloud ComputingProject<B> </h1>
 <h4 align="left" border-style:none >Prabhleen Kaur<br>MS Software Development  </h4>
-<br>
+
 <h1 align="center" style="border-bottom: none;"><B>Watson Assisstant Food Coach App<B> </h1>
 <h4 align="left" style="border-bottom: none;">The Project is an application based on Watson Assistantand the purpose of this project is to deploy the application into hybrid cloud  environmentand ,configure and run in two different cloud environment.This application demonstrates how the Watson Assistant (formerly Conversation) service can be adapted to use Tone Analyzer's tone along with intents and entities in a simple chat interface.</h4>
-<br>
-<h2 align="left" style="border-bottom: none;"> <B>Purpose of the Application </h2><br>
+
+<h2 align="left" style="border-bottom: none;"> <B>Purpose of the Application<B> </h2><br>
 <p style="border-bottom: none;">The application interface is designed for chatting with a coaching bot. Based on the time of day, it asks you if you've had a particular meal (breakfast, lunch, or dinner) and what you ate for that meal.
 
 The chat interface is in the left panel of the UI, and the JSON response object returned by the Assistant service in the right panel. Your input is run against a small set of sample data trained with the following intents:
@@ -22,7 +22,9 @@ These intents and entities help the bot understand variations your input.
 After asking you what you ate (if a meal was consumed), the bot asks you how you feel about it. Depending on your emotional tone, the bot provides different feedback.
     </p>
  
- <h2 align="left" "><B>Dependencies and Services used <B>  </h2>
+  <h2 align="left" "><B>Project  Architecture<B>  </h2>
+   ![CCProj](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/CCProj.jpg?raw=true)
+ <h2 align="left" style="border-bottom: none;"><B>Dependencies and Services used <B>  </h2>
  <p><ul>
     <li><a href="https://console.bluemix.net/docs/cli/index.html#overview">IBM Cloud Services</a></li>
     <li><a href="https://aws.amazon.com/console/">AWS Cloud Services</a></li><li>AWSCloud Services</li>
@@ -33,8 +35,7 @@ After asking you what you ate (if a meal was consumed), the bot asks you how you
     </P>
     
    
-  <h2 align="left" "><B>Project  Architecture<B>  </h2>
-   ![CCProj](readme_images/CCProj.jpg)
+ 
 
 ![app demo](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/app%20demo.gif?raw=true)
 

@@ -71,7 +71,7 @@ The Application acan be deployed by following the steps mentioned below.Here IBM
 
 ## Configuring the application
 
-1. In your **IBM Cloud console**, open the Watson Assistant service instance
+1. In your <b>IBM Cloud console<b>, open the Watson Assistant service instance
 
 2. Click the **Import workspace** icon in the Watson Assistant service tool. Specify the location of the workspace JSON file in your local drive of the app project:
 
@@ -81,7 +81,7 @@ The Application acan be deployed by following the steps mentioned below.Here IBM
 
 4. Click on the **Skills** from the header or from the homepage <Skill/Food Coach/Build> 
 
-4.Click on the 3 dots of the skill in the upper-right corner of the workspace title, and then select **View details**.
+5. Click on the 3 dots of the skill in the upper-right corner of the workspace title, and then select **View details**.
 
 6. Copy the **workspace ID**, **Username** and **Password** to the clipboard.
 

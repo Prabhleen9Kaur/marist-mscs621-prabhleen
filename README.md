@@ -45,7 +45,7 @@ After asking you what you ate (if a meal was consumed), the bot asks you how you
 Demo: http://food-coach.ng.bluemix.net/
 
 
-## Deploying the application
+## Developing the application
 The Application acan be deployed by following the steps mentioned below.Here IBM Cloud and AWS cloud services are used .By following the steps it can be deployed in any cloud environment.Snips have been attached to help follow the steps.
 
 ## Prerequisites
@@ -71,7 +71,7 @@ The Application acan be deployed by following the steps mentioned below.Here IBM
 
 ## Configuring the application
 
-1. In your <B>IBM Cloud console<B>, open the Watson Assistant service instance
+1. In your **IBM Cloud console**, open the Watson Assistant service instance
 
 2. Click the <B>Import workspace<B> icon in the Watson Assistant service tool. Specify the location of the workspace JSON file in your local drive of the app project:
 
@@ -87,13 +87,23 @@ The Application acan be deployed by following the steps mentioned below.Here IBM
 
     ![watson](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/watson.JPG?raw=true)
 
-6. In the application folder, copy the *.env.example* file and create a file called *.env*
+<h2 align="left"  style="border-bottom: none;"><B>Deploying the Application<B>  </h2>
+##  Running locally
+
+1. In the Terminal, Run 'vagrant up'
+2. Run 'vagrant ssh'<br>
+![Ibm_vagrantup](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/Ibm_vagrantup.JPG?raw=true)
+
+![ibm_vagrantssh](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/ibm_vagrantssh.JPG?raw=true)
+3. Clone the repo into the vagrant machine 
+   'git clone https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen.git'
+4. In the application folder, copy the *.env.example* file and create a file called *.env* 
 
     ```
     cp .env.example .env
     ```
 
-7. Open the *.env* file and add the service credentials that you obtained in the previous step.
+5. Open the *.env* file and add the service credentials that you obtained in the previous step.
 
     Example *.env* file that configures the `apikey` and `url` for a Watson Assistant service instance hosted in the US East region:
 
@@ -112,14 +122,14 @@ The Application acan be deployed by following the steps mentioned below.Here IBM
     ASSISTANT_URL=https://gateway.watsonplatform.net/assistant/api
     ```
 
-8. Add the `WORKSPACE_ID` to the previous properties
+6. Add the `WORKSPACE_ID` to the previous properties
 
     ```
     WORKSPACE_ID=522be-7b41-ab44-dec3-g1eab2ha73c6
     ```
 
 
-9. Your `.env` file  should looks like:
+7. Your `.env` file  should looks like:
 
     ```
     # Environment variables
@@ -131,100 +141,91 @@ The Application acan be deployed by following the steps mentioned below.Here IBM
     TONE_ANALYZER_URL=https://gateway-syd.watsonplatform.net/tone-analyzer/api
     ```
 
-## Running locally
+![ibm_nanoNode](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/ibm_nanoNode.JPG?raw=true)
 
-1. Install the dependencies
+8. Install the dependencies <a href="https://github.com/nodesource/distributions/blob/master/README.md#debinstall"> Node.js </a> ,<a href="https://github.com/nodesource/distributions/blob/master/README.md#debinstall">IBM Cloud CLI</a> ,<a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1">Docker </a>  &<a href="https://docs.docker.com/compose/install/#install-composel"> Docker-Compose </a>
 
-    ```
-    npm install
-    ```
+9. Create Dockerfilr and docker-compose.yml :
+ 'vi Dockerfile'
+ 'vi docker-compose.yml'
+ 10. Run
+   ```
+    sudo docker-compose up
+   ```
+ ![ibm_dockercomposeup](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/ibm_dockercomposeup.JPG?raw=true)
 
-1. Run the application
+
+11. Run the application
 
     ```
     npm start
     ```
 
-1. View the application in a browser at `localhost:3000`
+12. View the application in a browser at `localhost:3000`
 
-## Deploying to IBM Cloud as a Cloud Foundry Application
-
-1. Login to IBM Cloud with the [IBM Cloud CLI](https://console.bluemix.net/docs/cli/index.html#overview)
-
-    ```
-    ibmcloud login
-    ```
-
-1. Target a Cloud Foundry organization and space.
+## Deploying to AWS Cloud Services
+1. Login to AWS Cloud with the [AWS Cloud Console](https://us-east-2.console.aws.amazon.com)
 
     ```
-    ibmcloud target --cf
+    awscloud login
     ```
 
-1. Edit the *manifest.yml* file. Change the **name** field to something unique.  
-  For example, `- name: my-app-name`.
-1. Deploy the application
+2. Create an Instance of AWS EC2 **Ubuntu**
+
+3. Create a new key pair with your name and download it to your local folder
+4. Navigate to Running Instances on your EC2 Dashboard
+
+ ![aws_instance]https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/aws_instance.JPG?raw=true)
+ 
+5. Copy the Public DNS (IPv4) and IPv4 Public IP
+6. Under the Menu in top left corner ,Navigate to Security Groups
+7. Select the newly created security group and select Inbound below
+8. Click Edit and Add Rule
+9. Change the Port Range to 3000 and Source to Anywhere and Save
+10. Open up a terminal and navigate to folder with downloaded key file
+11. Run
+   ```
+     chmod 400 <Your key file>
+   ```
+12. Run 
+ ```
+    ssh -i <key file> ubuntu@<Public DNS (IPv4)>
+   ```
+Public DNS (IPv4) can be found in your AWS EC2 Dashboard Running Instances
+
+13. Clone the repo into the vagrant machine 
+   'git clone https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen.git'
+14. In the application folder, copy the *.env.example* file and create a file called *.env* 
 
     ```
-    ibmcloud app push
+    cp .env.example .env
     ```
 
-1. View the application online at the app URL.  
-For example: https://my-app-name.mybluemix.net
+15. Open the *.env* file and add the service credentials that you obtained in the previous step.
+16. Add the `WORKSPACE_ID` to the previous properties
+17. Your `.env` file  should looks like:
+
+   ![ibm_nanoNode](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/ibm_nanoNode.JPG?raw=true)
+
+18. Install the dependencies <a href="https://github.com/nodesource/distributions/blob/master/README.md#debinstall"> Node.js </a> ,<a href="https://github.com/nodesource/distributions/blob/master/README.md#debinstall">IBM Cloud CLI</a> ,<a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1">Docker </a>  &<a href="https://docs.docker.com/compose/install/#install-composel"> Docker-Compose </a>
+
+19. Create Dockerfilr and docker-compose.yml :
+ 'vi Dockerfile'
+ 'vi docker-compose.yml'
+ 20. Run
+   ```
+    sudo docker-compose up
+   ```
+ ![ibm_dockercomposeup](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/ibm_dockercomposeup.JPG?raw=true)
 
 
-# What to do next
+21. Run the application
 
-After you have the application installed and running, experiment with it to see how it responds to your input.
+    ```
+    npm start
+    ```
 
-## Modifying the application
-
-After you have the application deployed and running, you can explore the source files and make changes. Try the following:
-
-   * Modify the .js files to change the application logic.
-
-   * Modify the .html file to change the appearance of the application page.
-
-   * Use the Assistant tool to train the service for new intents, or to modify the dialog flow. For more information, see the [Assistant service documentation](https://console.bluemix.net/docs/services/conversation/index.html#about).
-
-# What does the Food Coach application do?
-
-The application interface is designed for chatting with a coaching bot. Based on the time of day, it asks you if you've had a particular meal (breakfast, lunch, or dinner) and what you ate for that meal.
-
-The chat interface is in the left panel of the UI, and the JSON response object returned by the Assistant service in the right panel. Your input is run against a small set of sample data trained with the following intents:
-
-    yes: acknowledgment that the specified meal was eaten
-    no: the specified meal was not eaten
-    help
-    exit
-
-The dialog is also trained on two types of entities:
-
-    food items
-    unhealthy food items
-
-These intents and entities help the bot understand variations your input.
-
-After asking you what you ate (if a meal was consumed), the bot asks you how you feel about it. Depending on your emotional tone, the bot provides different feedback.
-
-Below you can find some sample interactions:
-
-![Alt text](readme_images/examples.jpeg?raw=true)
-
-In order to integrate the Tone Analyzer with the Assistant service, the following approach was taken:
-   * Intercept the user's message. Before sending it to the Assistant service, invoke the Tone Analyzer Service. See the call to `toneDetection.invokeToneAsync` in the `invokeToneConversation` function in [app.js](./app.js).
-   * Parse the JSON response object from the Tone Analyzer Service, and add appropriate variables to the context object of the JSON payload to be sent to the Assistant service. See the `updateUserTone` function in [tone_detection.js](./addons/tone_detection.js).
-   * Send the user input, along with the updated context object in the payload to the Assistant service. See the call to `assistant.message` in the `invokeToneConversation` function in [app.js](./app.js).
-
-
-You can see the JSON response object from the Assistant service in the right hand panel.
-
-![Alt text](readme_images/tone_context.jpeg?raw=true)
-
-In the conversation template, alternative bot responses were encoded based on the user's emotional tone. For example:
-
-![Alt text](readme_images/rule.png?raw=true)
-
+22. View the application in a browser at `localhost:3000`
 
 # License
 

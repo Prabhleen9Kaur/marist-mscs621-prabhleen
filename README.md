@@ -1,10 +1,33 @@
 <h1 align="center" style="border-bottom: none;"><B>MSCS-621 Fall 2018 : Cloud ComputingProject<B> </h1>
-<h1 align="center" style="border-bottom: none;">Prabhleen Kaur </h3>
+<h2 align="center" style="border-bottom: none;">Prabhleen Kaur </h2>
 <h1 align="center" style="border-bottom: none;"><B>Watson Assisstant Food Coach App<B> </h1>
 <h3 align="center">This application demonstrates how the Watson Assistant (formerly Conversation) service can be adapted to use Tone Analyzer's tone along with intents and entities in a simple chat interface.</h3>
 
-<p>
+<p><B>Purpose of the Application<B></p>
+<p>The application interface is designed for chatting with a coaching bot. Based on the time of day, it asks you if you've had a particular meal (breakfast, lunch, or dinner) and what you ate for that meal.
+
+The chat interface is in the left panel of the UI, and the JSON response object returned by the Assistant service in the right panel. Your input is run against a small set of sample data trained with the following intents:
+
+yes: acknowledgment that the specified meal was eaten
+no: the specified meal was not eaten
+help
+exit
+The dialog is also trained on two types of entities:
+
+food items
+unhealthy food items
+These intents and entities help the bot understand variations your input.
+
+After asking you what you ate (if a meal was consumed), the bot asks you how you feel about it. Depending on your emotional tone, the bot provides different feedback.
     </p>
+ 
+ <h2 align="center" "><B>Dependencies and Services used <B>  </h2>
+ <p><ul>
+    <li>IBM Cloud Services</li>
+    <li>AWSCloud Services</li>
+    <li>Watson Assistant API</li>
+    <li>IBM Cloud Services</li>
+    </P>
     
 
 ![app demo](readme_images/app_demo.gif?raw=true)

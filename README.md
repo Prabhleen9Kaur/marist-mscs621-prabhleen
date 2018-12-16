@@ -55,15 +55,15 @@ The Application acan be deployed by following the steps mentioned below.Here IBM
 1. Create an instance of the Watson Assistant service and get your credentials:
     - Go to the [Watson Assistant](https://console.bluemix.net/catalog/services/conversation) page in the IBM Cloud Catalog.
     - Log in to your IBM Cloud account.
-    - Click **Create**.
-    - Click **Show** to view the service credentials.
+    - Click <B>Create<B>.
+    - Click <B>Show<B> to view the service credentials.
     - Copy the `apikey` value, or copy the `username` and `password` values if your service instance doesn't provide an `apikey`.
     - Copy the `url` value.
 1. Create an instance of the Tone Analyzer service and get your credentials:
     - Go to the [Tone Analyzer](https://console.bluemix.net/catalog/services/tone-analyzer) page in the IBM Cloud Catalog.
     - Log in to your IBM Cloud account.
-    - Click **Create**.
-    - Click **Show** to view the service credentials.
+    - Click <B>Create<B>.
+    - Click <B>Show<B>to view the service credentials.
     - Copy the `apikey` value, or copy the `username` and `password` values if your service instance doesn't provide an `apikey`.
     - Copy the `url` value.
 
@@ -71,19 +71,19 @@ The Application acan be deployed by following the steps mentioned below.Here IBM
 
 ## Configuring the application
 
-1. In your <b>IBM Cloud console<b>, open the Watson Assistant service instance
+1. In your <B>IBM Cloud console<B>, open the Watson Assistant service instance
 
-2. Click the **Import workspace** icon in the Watson Assistant service tool. Specify the location of the workspace JSON file in your local drive of the app project:
+2. Click the <B>Import workspace<B> icon in the Watson Assistant service tool. Specify the location of the workspace JSON file in your local drive of the app project:
 
    `<project_root>/food-coach/training/food-coach-workspace.json`
 
-3. Select **Everything (Intents, Entities, and Dialog)** and then click **Import**. The skill dashboard workspace is created.
+3. Select <B>*Everything (Intents, Entities, and Dialog)<B> and then click <B>Import<B>. The skill dashboard workspace is created.
 
-4. Click on the **Skills** from the header or from the homepage <Skill/Food Coach/Build> 
+4. Click on the<B>Skills<B> from the header or from the homepage <Skill/Food Coach/Build> 
 
-5. Click on the 3 dots of the skill in the upper-right corner of the workspace title, and then select **View details**.
+5. Click on the 3 dots of the skill in the upper-right corner of the workspace title, and then select <B>View API details<B>.
 
-6. Copy the **workspace ID**, **Username** and **Password** to the clipboard.
+6. Copy the <B>*workspace ID<B>, <B>*Username<B> and <B>Password<B> to the clipboard.
 
     ![watson](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/watson.JPG?raw=true)
 

@@ -7,7 +7,7 @@
     </p>
     
 
-![app_demo](readme_images/app_demo.mpv4?raw=true)
+![app demo](readme_images/app_demo.gif?raw=true)
 
 Demo: http://food-coach.ng.bluemix.net/
 

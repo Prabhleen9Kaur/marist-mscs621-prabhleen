@@ -35,7 +35,8 @@ After asking you what you ate (if a meal was consumed), the bot asks you how you
   <h2 align="left" "><B>Project  Architecture<B>  </h2>
    ![CCProj](readme_images/CCProj.jpg)
 
-![app demo](readme_images/app demo.gif?raw=true)
+![app demo](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/app%20demo.gif?raw=true)
+
 
 Demo: http://food-coach.ng.bluemix.net/
 

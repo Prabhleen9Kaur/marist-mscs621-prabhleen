@@ -32,7 +32,7 @@ After asking you what you ate (if a meal was consumed), the bot asks you how you
  <h2 align="left" style="border-bottom: none;"><B>Dependencies and Services used <B>  </h2>
  <p><ul>
     <li><a href="https://console.bluemix.net/docs/cli/index.html#overview">IBM Cloud Services</a></li>
-    <li><a href="https://aws.amazon.com/console/">AWS Cloud Services</a></li><li>AWSCloud Services</li>
+    <li><a href="https://aws.amazon.com/console/">AWS Cloud Services</a></li>
     <li><a href="https://github.com/nodesource/distributions/blob/master/README.md#debinstall">Node.js</a></li>
     <li><a href="https://console.bluemix.net/docs/cli/index.html#overview">IBM Cloud CLI</a></li>
     <li><a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1">Docker</a></li>
@@ -81,11 +81,11 @@ The Application acan be deployed by following the steps mentioned below.Here IBM
 
 4. Click on the **Skills** from the header or from the homepage <Skill/Food Coach/Build> 
 
-5.Click on the 3 dots of the skill in the upper-right corner of the workspace title, and then select **View details**.
+4.Click on the 3 dots of the skill in the upper-right corner of the workspace title, and then select **View details**.
 
 6. Copy the **workspace ID**, **Username** and **Password** to the clipboard.
 
-    ![Steps to get credentials](https://github.com/watson-developer-cloud/assistant-simple/raw/master/readme_images/assistant-simple.gif)
+    ![watson](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/watson.JPG?raw=true)
 
 6. In the application folder, copy the *.env.example* file and create a file called *.env*
 

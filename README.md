@@ -174,38 +174,38 @@ The Application acan be deployed by following the steps mentioned below.Here IBM
     ```
 
 ![aws_instance](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/aws.gif?raw=true)
-2. Create an Instance of AWS EC2 <B>Ubuntu</B>
-3. Go to the AWS sevices EC2 page in the AWS Cloud Services.
-4. Click EC2 under compute to create an instance.
-5. Click Launch Instance
-6. Choose an AMI (eg: Ubuntu Server 16.04 LTS (HVM), SSD Volume Type - ami-0f9cf087c1f27d9b1 (64-bit x86) / ami-036ede09922dadc9b (64-bit Arm) I have used this for my project)
-7. Click select and choose a instance type (t2 micro is used in this project).
+3. Create an Instance of AWS EC2 <B>Ubuntu</B>
+4. Go to the AWS sevices EC2 page in the AWS Cloud Services.
+5. Click EC2 under compute to create an instance.
+6. Click Launch Instance
+7. Choose an AMI (eg: Ubuntu Server 16.04 LTS (HVM), SSD Volume Type - ami-0f9cf087c1f27d9b1 (64-bit x86) / ami-036ede09922dadc9b (64-bit Arm) I have used this for my project)
+8. Click select and choose a instance type (t2 micro is used in this project).
 
-8. Create a new key pair with your name and download it to your local folder
-9. Navigate to Running Instances on your EC2 Dashboard
+9. Create a new key pair with your name and download it to your local folder
+10. Navigate to Running Instances on your EC2 Dashboard
 
 
  ![aws_instance](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/aws_instance.JPG?raw=true)
  
-10. Copy the Public DNS (IPv4) and IPv4 Public IP
-11. Under the Menu in top left corner ,Navigate to Security Groups
-12. Select the newly created security group and select Inbound below
-13. Click Edit and Add Rule
-14. Change the Port Range to 3000 and Source to Anywhere and Save
-15. Open up a terminal and navigate to folder with downloaded key file
-16. Run
+11. Copy the Public DNS (IPv4) and IPv4 Public IP
+12. Under the Menu in top left corner ,Navigate to Security Groups
+13. Select the newly created security group and select Inbound below
+14. Click Edit and Add Rule
+15. Change the Port Range to 3000 and Source to Anywhere and Save
+16. Open up a terminal and navigate to folder with downloaded key file
+17. Run
    ```
      chmod 400 <Your key file>
    ```
-12. Run 
- ```
+18. Run 
+  ```
     ssh -i <key file> ubuntu@<Public DNS (IPv4)>
    ```
 Public DNS (IPv4) can be found in your AWS EC2 Dashboard Running Instances
 
-13. Clone the repo into the vagrant machine 
-   'git clone https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen.git'
-14. In the application folder, copy the *.env.example* file and create a file called *.env* 
+19. Clone the repo into the vagrant machine <br>
+   'git clone https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen.git'<br>
+20. In the application folder, copy the *.env.example* file and create a file called *.env* 
 
     ```
     cp .env.example .env

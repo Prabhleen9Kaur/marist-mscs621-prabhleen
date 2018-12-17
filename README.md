@@ -97,8 +97,9 @@ The Application acan be deployed by following the steps mentioned below.Here IBM
 ![Ibm_vagrantup](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/Ibm_vagrantup.JPG?raw=true)<br>
 
 ![ibm_vagrantssh](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/ibm_vagrantssh.JPG?raw=true)
+
 3. Clone the repo into the vagrant machine <br>
-   'git clone https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen.git'
+   `git clone https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen.git`<br>
 4. In the application folder, copy the *.env.example* file and create a file called <B>.env</B> 
 
     ```

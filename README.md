@@ -175,6 +175,7 @@ The Application acan be deployed by following the steps mentioned below.Here IBM
     ```
 
 ![aws_instance](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/aws.gif?raw=true)
+<br>
 3. Create an Instance of AWS EC2 <B>Ubuntu</B>
 4. Go to the AWS sevices EC2 page in the AWS Cloud Services.
 5. Click EC2 under compute to create an instance.

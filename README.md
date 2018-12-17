@@ -221,7 +221,7 @@ Public DNS (IPv4) can be found in your AWS EC2 Dashboard Running Instances
 16. Add the `WORKSPACE_ID` to the previous properties
 17. Your `.env` file  should looks like:
 
-   ![ibm_nanoNode](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/ibm_nanoNode.JPG?raw=true)
+   ![AWS_nano](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/AWS_nano.JPG?raw=true)
 
 18. Install the dependencies <a href="https://github.com/nodesource/distributions/blob/master/README.md#debinstall"> Node.js </a> ,<a href="https://github.com/nodesource/distributions/blob/master/README.md#debinstall">IBM Cloud CLI</a> ,<a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1">Docker </a>  &<a href="https://docs.docker.com/compose/install/#install-composel"> Docker-Compose </a>
 
@@ -232,7 +232,7 @@ Public DNS (IPv4) can be found in your AWS EC2 Dashboard Running Instances
    ```
     sudo docker-compose up
    ```
- ![ibm_dockercomposeup](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/ibm_dockercomposeup.JPG?raw=true)
+ ![aws_dockercompose](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/aws_dockercompose.JPG?raw=true)
 
 
 21. Run the application
@@ -243,14 +243,13 @@ Public DNS (IPv4) can be found in your AWS EC2 Dashboard Running Instances
 
 22. View the application in a browser at `localhost:3000`
 
+![demo](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/demo.gif?raw=true)
+
 # License
 
   This sample code is licensed under Apache 2.0.
   Full license text is available in [LICENSE](LICENSE).
 
-# Contributing
-
-  See [CONTRIBUTING](CONTRIBUTING.md).
 
 ## Open Source @ IBM
 

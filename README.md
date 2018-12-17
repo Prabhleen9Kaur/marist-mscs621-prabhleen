@@ -130,7 +130,6 @@ The Application acan be deployed by following the steps mentioned below.Here IBM
     WORKSPACE_ID=522be-7b41-ab44-dec3-g1eab2ha73c6
     ```
 
-
 7. Your `.env` file  should looks like:
 
     ```
@@ -150,7 +149,7 @@ The Application acan be deployed by following the steps mentioned below.Here IBM
 9. Create Dockerfile and docker-compose.yml :
  'vi Dockerfile'
  'vi docker-compose.yml'
- 10. Run
+10. Run
    ```
     sudo docker-compose up
    ```
@@ -174,14 +173,19 @@ The Application acan be deployed by following the steps mentioned below.Here IBM
     awscloud login
     ```
 
-![aws_instance](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/aws.gif?raw=true)
-<br>
-3. Create an Instance of AWS EC2 <B>Ubuntu</B>
-4. Go to the AWS sevices EC2 page in the AWS Cloud Services.
-5. Click EC2 under compute to create an instance.
-6. Click Launch Instance
+![aws_instance](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/aws.gif?raw=true)<br>
+
+3. Create an Instance of AWS EC2 <B>Ubuntu</B><br>
+
+4. Go to the AWS sevices EC2 page in the AWS Cloud Services.<br>
+
+5. Click EC2 under compute to create an instance.<br>
+
+6. Click Launch Instance<br>
+
 7. Choose an AMI (eg: Ubuntu Server 16.04 LTS (HVM), SSD Volume Type - ami-0f9cf087c1f27d9b1 (64-bit x86) / ami-036ede09922dadc9b (64-bit Arm) I have used this for my project)
-8. Click select and choose a instance type (t2 micro is used in this project).
+
+8. Click select and choose a instance type (t2 micro is used in this project).<br>
 
 9. Create a new key pair with your name and download it to your local folder
 10. Navigate to Running Instances on your EC2 Dashboard

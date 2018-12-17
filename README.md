@@ -24,7 +24,7 @@ After asking you what you ate (if a meal was consumed), the bot asks you how you
  
   <h2 align="left"  style="border-bottom: none;"><B>Project  Architecture<B>  </h2>
   <p>The Architecture of the project explains the development and the pilot environment.The project is developed using IBM Cloud Services(Bluemix + Watson) and Rest APIs.The application is deployed in the Local Cloud and Local Browser.AWS cloud service is used for deployment of the application in the hybrid cloud environment .The Vagrant ,Docker and Virtual box is used for deploying the app locally.The GitHub is used as the source code repository.The code is borrowed from github project https://github.com/watson-developer-cloud/food-coach.<br>
-<B>APIs Specification :<B>Watson Assistant API , Data Handling and methode to get user response.
+<B>APIs Specification :</B>Watson Assistant API , Data Handling and methode to get user response.
     </p>
     
   ![CCProj](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/CCProj.jpg?raw=true)
@@ -55,15 +55,15 @@ The Application acan be deployed by following the steps mentioned below.Here IBM
 1. Create an instance of the Watson Assistant service and get your credentials:
     - Go to the [Watson Assistant](https://console.bluemix.net/catalog/services/conversation) page in the IBM Cloud Catalog.
     - Log in to your IBM Cloud account.
-    - Click <B>Create<B>.
-    - Click <B>Show<B> to view the service credentials.
+    - Click <B>Create</B>.
+    - Click <B>Show</B> to view the service credentials.
     - Copy the `apikey` value, or copy the `username` and `password` values if your service instance doesn't provide an `apikey`.
     - Copy the `url` value.
 1. Create an instance of the Tone Analyzer service and get your credentials:
     - Go to the [Tone Analyzer](https://console.bluemix.net/catalog/services/tone-analyzer) page in the IBM Cloud Catalog.
     - Log in to your IBM Cloud account.
-    - Click <B>Create<B>.
-    - Click <B>Show<B>to view the service credentials.
+    - Click <B>Create</B>.
+    - Click <B>Show</B>to view the service credentials.
     - Copy the `apikey` value, or copy the `username` and `password` values if your service instance doesn't provide an `apikey`.
     - Copy the `url` value.
 
@@ -71,38 +71,39 @@ The Application acan be deployed by following the steps mentioned below.Here IBM
 
 ## Configuring the application
 
-1. In your **IBM Cloud console**, open the Watson Assistant service instance
+1. In your <B>IBM Cloud console</B>, open the Watson Assistant service instance
 
-2. Click the <B>Import workspace<B> icon in the Watson Assistant service tool. Specify the location of the workspace JSON file in your local drive of the app project:
+2. Click the <B>Import workspace</B> icon in the Watson Assistant service tool. Specify the location of the workspace JSON file in your local drive of the app project:
 
    `<project_root>/food-coach/training/food-coach-workspace.json`
 
-3. Select <B>*Everything (Intents, Entities, and Dialog)<B> and then click <B>Import<B>. The skill dashboard workspace is created.
+3. Select <B>Everything (Intents, Entities, and Dialog)</B> and then click <B>Import</B>. The skill dashboard workspace is created.
 
-4. Click on the<B>Skills<B> from the header or from the homepage <Skill/Food Coach/Build> 
+4. Click on the<B>Skills</B> from the header or from the homepage <Skill/Food Coach/Build> 
 
-5. Click on the 3 dots of the skill in the upper-right corner of the workspace title, and then select <B>View API details<B>.
+5. Click on the 3 dots of the skill in the upper-right corner of the workspace title, and then select <B>View API details</B>.
 
-6. Copy the <B>*workspace ID<B>, <B>*Username<B> and <B>Password<B> to the clipboard.
+6. Copy the <B>workspace ID</B>, <B>Username</B> and <B>Password</B> to the clipboard.
 
     ![watson](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/watson.JPG?raw=true)
 
-<h2 align="left"  style="border-bottom: none;"><B>Deploying the Application<B>  </h2>
-##  Running locally
+<h2 align="left"  style="border-bottom: none;"><B>Deploying the Application</B>  </h2>
 
-1. In the Terminal, Run 'vagrant up'
-2. Run 'vagrant ssh'<br>
-![Ibm_vagrantup](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/Ibm_vagrantup.JPG?raw=true)
+## Running locally
+
+1. In the Terminal, Run `vagrant up`
+2. Run `vagrant ssh` <br>
+
+![Ibm_vagrantup](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/Ibm_vagrantup.JPG?raw=true)<br>
 
 ![ibm_vagrantssh](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/ibm_vagrantssh.JPG?raw=true)
-3. Clone the repo into the vagrant machine 
+3. Clone the repo into the vagrant machine <br>
    'git clone https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen.git'
-4. In the application folder, copy the *.env.example* file and create a file called *.env* 
+4. In the application folder, copy the *.env.example* file and create a file called <B>.env</B> 
 
     ```
-    cp .env.example .env
+     cp .env.example .env
     ```
-
 5. Open the *.env* file and add the service credentials that you obtained in the previous step.
 
     Example *.env* file that configures the `apikey` and `url` for a Watson Assistant service instance hosted in the US East region:
@@ -145,7 +146,7 @@ The Application acan be deployed by following the steps mentioned below.Here IBM
 
 8. Install the dependencies <a href="https://github.com/nodesource/distributions/blob/master/README.md#debinstall"> Node.js </a> ,<a href="https://github.com/nodesource/distributions/blob/master/README.md#debinstall">IBM Cloud CLI</a> ,<a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1">Docker </a>  &<a href="https://docs.docker.com/compose/install/#install-composel"> Docker-Compose </a>
 
-9. Create Dockerfilr and docker-compose.yml :
+9. Create Dockerfile and docker-compose.yml :
  'vi Dockerfile'
  'vi docker-compose.yml'
  10. Run
@@ -164,26 +165,35 @@ The Application acan be deployed by following the steps mentioned below.Here IBM
 12. View the application in a browser at `localhost:3000`
 
 ## Deploying to AWS Cloud Services
-1. Login to AWS Cloud with the [AWS Cloud Console](https://us-east-2.console.aws.amazon.com)
+
+1. Sign up for an AWS Cloud Account.
+2. Login to AWS Cloud with the [AWS Cloud Console](https://us-east-2.console.aws.amazon.com)
 
     ```
     awscloud login
     ```
 
-2. Create an Instance of AWS EC2 **Ubuntu**
+![aws_instance](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/aws.gif?raw=true)
+2. Create an Instance of AWS EC2 <B>Ubuntu</B>
+3. Go to the AWS sevices EC2 page in the AWS Cloud Services.
+4. Click EC2 under compute to create an instance.
+5. Click Launch Instance
+6. Choose an AMI (eg: Ubuntu Server 16.04 LTS (HVM), SSD Volume Type - ami-0f9cf087c1f27d9b1 (64-bit x86) / ami-036ede09922dadc9b (64-bit Arm) I have used this for my project)
+7. Click select and choose a instance type (t2 micro is used in this project).
 
-3. Create a new key pair with your name and download it to your local folder
-4. Navigate to Running Instances on your EC2 Dashboard
+8. Create a new key pair with your name and download it to your local folder
+9. Navigate to Running Instances on your EC2 Dashboard
 
- ![aws_instance]https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/aws_instance.JPG?raw=true)
+
+ ![aws_instance](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/aws_instance.JPG?raw=true)
  
-5. Copy the Public DNS (IPv4) and IPv4 Public IP
-6. Under the Menu in top left corner ,Navigate to Security Groups
-7. Select the newly created security group and select Inbound below
-8. Click Edit and Add Rule
-9. Change the Port Range to 3000 and Source to Anywhere and Save
-10. Open up a terminal and navigate to folder with downloaded key file
-11. Run
+10. Copy the Public DNS (IPv4) and IPv4 Public IP
+11. Under the Menu in top left corner ,Navigate to Security Groups
+12. Select the newly created security group and select Inbound below
+13. Click Edit and Add Rule
+14. Change the Port Range to 3000 and Source to Anywhere and Save
+15. Open up a terminal and navigate to folder with downloaded key file
+16. Run
    ```
      chmod 400 <Your key file>
    ```

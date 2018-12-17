@@ -243,7 +243,9 @@ Public DNS (IPv4) can be found in your AWS EC2 Dashboard Running Instances
 
 22. View the application in a browser at `localhost:3000`
 
-![demo](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/demo.gif?raw=true)
+![demo](https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/readme_images/demo.gif?raw=true) <br>
+
+<a href="https://github.com/Prabhleen9Kaur/marist-mscs621-prabhleen/blob/master/Cloud%20Final%20Project%20ppt.ppt"> Final Project ppt</a>
 
 # License
 

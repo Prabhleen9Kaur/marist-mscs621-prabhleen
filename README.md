@@ -2,7 +2,7 @@
 <h4 align="left" border-style:none >Prabhleen Kaur<br>MS Software Development  </h4>
 
 <h1 align="center" style="border-bottom: none;"><B>Watson Assisstant Food Coach App<B> </h1>
-<h4 align="left" style="border-bottom: none;">The Project is an application based on Watson Assistantand the purpose of this project is to deploy the application into hybrid cloud  environmentand ,configure and run in two different cloud environment.This application demonstrates how the Watson Assistant (formerly Conversation) service can be adapted to use Tone Analyzer's tone along with intents and entities in a simple chat interface.</h4>
+<h4 align="left" style="border-bottom: none;">The Project is an application based on Watson Assistantand the purpose of this project is to deploy the application into hybrid cloud  environment and configure and run in two different cloud environment.This application demonstrates how the Watson Assistant (formerly Conversation) service can be adapted to use Tone Analyzer's tone along with intents and entities in a simple chat interface.</h4>
 
 <h2 align="left" style="border-bottom: none;"> <B>Purpose of the Application<B> </h2><br>
 <p style="border-bottom: none;">The application interface is designed for chatting with a coaching bot. Based on the time of day, it asks you if you've had a particular meal (breakfast, lunch, or dinner) and what you ate for that meal.

@@ -34,7 +34,7 @@
   "devDependencies": {
     "browser-sync": "^2.24.6",
     "casperjs": "^1.1.4",
-    "eslint": "^5.2.0",
+    "eslint": "^9.32.0",
     "graceful-fs": "^4.1.11",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
